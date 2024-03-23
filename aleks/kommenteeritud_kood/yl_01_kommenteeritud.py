@@ -37,6 +37,7 @@ class Solution(object):
         # Võimalike sammude kombinatsioonide arv vasatavalt samas järjekorras eelmisel real loodud astmete listiga kuni tippu 
         # (0 on trepi algus, talle vastab kõige suurem võimalik tippu saamise kombinatsioonide arv)
         print(numberOfPossibleClimbs)
-
-
-        return samme_yhekaupa
+        
+        # Mõttetu lisadefineerimine, aga et oleks arusaadavam
+        koik_voimalikud_kombinatsioonid = samme_yhekaupa
+        return koik_voimalikud_kombinatsioonid 
