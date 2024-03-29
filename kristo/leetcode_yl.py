@@ -1,8 +1,13 @@
+# Harjutus leetcodest number 1648. https://leetcode.com/problems/sell-diminishing-valued-colored-balls/description/
 
 # x arvu kollast palli ja y arvu sinist palli
-inventory = [1000000000]
-#inimene tahab saada k amount palle
-orders = 1000000000
+inventory = [2,6,8,4,10]
+# inimene tahab saada k amount palle
+orders = 19
+
+# andmed, mida näidetena saab kasutada:
+# inventory = [2,6,8,4,10], orders = 19, Sellega tuleb vale vastus 107, aga peaks tulema 110
+# inventory = [1000000], orders = 1000000, sellega tuleb ajaline probleem.
 
 def bubbleSort(inventory):
     n = len(inventory)
