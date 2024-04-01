@@ -8,15 +8,15 @@ orders = 19
 # andmed, mida näidetena saab kasutada:
 # inventory = [2,6,8,4,10], orders = 19, Sellega tuleb vale vastus 107, aga peaks tulema 110
 # inventory = [1000000], orders = 1000000, sellega tuleb ajaline probleem.
-
-def bubbleSort(inventory):
-    n = len(inventory)
-    for i in range(n-1):
-        for j in range(0, n-1-i):
-            if inventory[j] > inventory[j+1]:
-                inventory[j], inventory[j+1] = inventory[j+1], inventory[j]
-
-    return inventory
+#
+# def bubbleSort(inventory):
+#     n = len(inventory)
+#     for i in range(n-1):
+#         for j in range(0, n-1-i):
+#             if inventory[j] > inventory[j+1]:
+#                 inventory[j], inventory[j+1] = inventory[j+1], inventory[j]
+#
+#     return inventory
 
 def maxProfit(inventory, orders):
     profit = 0
@@ -34,6 +34,6 @@ def maxProfit(inventory, orders):
     return profit
 
 
-m = bubbleSort(inventory)
-print(m)
-print(maxProfit(m, orders))
+# m = bubbleSort(inventory)
+# print(m)
+print(maxProfit(inventory, orders))
