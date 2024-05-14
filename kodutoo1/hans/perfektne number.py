@@ -1,6 +1,10 @@
 class Solution(object):
     def checkPerfectNumber(self, num):
-        if(num==6 or num==28 or num==496 or num==8128 or num==33550336):
-            return True
-        else:
+        if num == 1:
             return False
+        n = 1
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                n += i + num//i
+        return n == num
+    
